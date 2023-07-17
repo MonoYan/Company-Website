@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #3B5998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+body .login-container {
+  background-color: rgba(24, 44, 75, 0.7);
+  height: 400px;
+  width: 600px;
+  padding: 50px;
+  border-radius: 16px;
+}
+
+body .login-container h2 {
+  margin-bottom: 20px;
+}
+
+body .login-container .login-warning {
+  display: none;
+  margin-top: 10px;
+  color: #ce2828;
+}
