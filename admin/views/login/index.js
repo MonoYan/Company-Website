@@ -15,8 +15,12 @@ loginForm.addEventListener('submit', async (e) => {
 
     if(res.length>0){
         location.href ="/admin/views/home/index.html"
-    }else{
+        localStorage.setItem("token",JSON.stringify({
+            ...res[0],
+            password:"***"
+    }))
 
+    }else{
         loginWarning.style.display = "block"
     }
 
