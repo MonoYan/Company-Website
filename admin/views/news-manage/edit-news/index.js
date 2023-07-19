@@ -1,11 +1,14 @@
 import { load, isLogin } from "/admin/util/LoadView.js"
 
-load("sidemenu-addNews")
+load("sidemenu-newsList")
+
+// get id
+let updateId = new URL(location.href).searchParams.get("id")
 
 let content = ""
 let cover = ""
 
-const addNewsForm = document.querySelector('.addNews-form')
+const editNewsForm = document.querySelector('.editNews-form')
 
 // WangEditor
 const { createEditor, createToolbar } = window.wangEditor
@@ -44,23 +47,36 @@ coverFile.addEventListener('change', (e) => {
     }
 })
 
-// add function
-addNewsForm.addEventListener('submit', async (e) => {
+// edit function
+editNewsForm.addEventListener('submit', async (e) => {
     e.preventDefault()
-    await fetch('http://localhost:3000/news', {
+    await fetch(`http://localhost:3000/news/${updateId}`, {
         headers: {
             "content-type": "application/json"
         },
-        method: "POST",
+        method: "PATCH",
         body: JSON.stringify({
             title: title.value,
             content,
             category: category.value,
-            cover: cover,
-            //author
-            author: JSON.parse(isLogin()).username
+            cover,
         })
-    }).then(res=>res.json())
+    }).then(res => res.json())
 
     location.href = "/admin/views/news-manage/NewsList/index.html"
 })
+
+async function render() {
+    const { title, category, content:myContent, cover:myCover } = await fetch(`http://localhost:3000/news/${updateId}`)
+        .then(res => res.json())
+
+        document.querySelector('#title').value = title
+        document.querySelector('#category').value = category
+
+        editor.setHtml(myContent)
+        content = myContent
+
+        cover = myCover
+}
+
+render()

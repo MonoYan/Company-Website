@@ -17,7 +17,7 @@ async function render() {
     list = await fetch("http://localhost:3000/users").then(res => res.json())
     console.log(list)
     listBody.innerHTML = list.map(item => `
-        <tr">
+        <tr>
             <th scope="row">${item.id}</th>
             <td>${item.username}</td>
             <td><img src="${item.photo}" style="width:44px;border-radius:8px"></td>

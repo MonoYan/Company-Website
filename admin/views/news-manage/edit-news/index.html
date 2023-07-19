@@ -49,11 +49,11 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item " aria-current="page">News Management</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Add News</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Edit News</li>
                                 </ol>
                             </nav>
                             <!-- User information -->
-                            <form class="addNews-form">
+                            <form class="editNews-form">
                                 <div class="mb-3">
                                     <label for="title" class="form-label">Title</label>
                                     <input type="text" class="form-control" id="title" required>
@@ -67,7 +67,7 @@
 
                                     <div class="mb-3" style="margin-bottom:0 !important">
                                         <label for="coverFile" class="form-label">Cover</label>
-                                        <input type="file" class="form-control" id="coverFile" required>
+                                        <input type="file" class="form-control" id="coverFile" >
                                     </div>
                                     <div class="mb-3">
                                         <label for="category" class="form-label">Category</label>
@@ -80,12 +80,12 @@
                                     </div>
 
 
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="submit" class="btn btn-primary">Save</button>
 
                                     <div id="alertText" class="login-warning" class="form-text"
-                                        style="margin-top: 10px; color: red; display: none;">The passwords entered do
-                                        not match. Please make
-                                        sure to enter the same password in both fields.</div>
+                                        style="margin-top: 10px; color: red; display: none;">
+                                        <!-- alertText -->
+                                    </div>
                                 </div>
                             </form>
 
