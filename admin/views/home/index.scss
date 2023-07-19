@@ -1,1 +1,27 @@
-@import "../style.scss"
+@import "../style.scss";
+
+.maincontent{
+    margin-top: 31px;
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+}
+
+.user-information{
+    display: flex;
+    >div{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .username{
+            margin-bottom: 4px;
+            font-size: 20px;
+        }
+    }
+    >img{
+        border-radius: 8px;
+        height: 100px;
+        width: 100px;
+    }
+}

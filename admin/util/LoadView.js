@@ -15,6 +15,13 @@ function renderTopbar(user){
         location.href = "/admin/views/login/index.html"
     }
 }
+
+function isAdmin(user){
+    // console.log(user)
+    if (JSON.parse(user).role !== "admin") {
+        document.querySelector('#user-accordion').remove()
+    }
+}
 async function load(id){
     let user = isLogin()
     if(user){
@@ -28,11 +35,12 @@ async function load(id){
         document.querySelector(".sidemenu").innerHTML = sidemenuText
 
         document.querySelector('#'+id).style.color = "#0a58ca"
+        isAdmin(user)
 
-    }else {
-    location.href = "/admin/views/login/index.html"
+    }else{
+        location.href = "/admin/views/login/index.html"
     }
 }
 
 
-export {load}
+export { load, isLogin }

@@ -2,6 +2,8 @@ html,
 body,
 .main {
     height: 100%;
+    width: 1190px;
+    margin: 0 auto;
 }
 
 .main {
@@ -20,6 +22,16 @@ body,
     .box {
         flex: 1;
         padding-top: 50px;
-        background-color: skyblue;
+        // background-color: skyblue;
+            .content {
+                padding: 20px;
+                .maincontent {
+                        margin-top: 31px;
+                        border-radius: 3px;
+                        padding: 20px;
+                        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+                    }
+            }
+
     }
 }
