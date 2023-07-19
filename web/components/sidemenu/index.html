@@ -1,0 +1,59 @@
+    <ul class="nav flex-column" style="margin-top: 10px;">
+        <li class="nav-item">
+            <a id="sidemenu-homepage" class="nav-link active" aria-current="page" href="/admin/views//home/index.html">Homepage</a>
+        </li>
+        <li class="nav-item">
+<div class="accordion" id="user-accordion" >
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="user-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#user-manage"
+                aria-expanded="true" aria-controls="user-manage">
+                User Management
+            </button>
+        </h2>
+        <div id="user-manage" class="accordion-collapse collapse show" aria-labelledby="user-headingOne"
+            data-bs-parent="#user-accordion">
+            <div class="accordion-body">
+                <a id="sidemenu-addUser" class="nav-link active" aria-current="page" href="/admin/views/user-manage/add-user/index.html">Add User</a>
+                <a id="sidemenu-userList" class="nav-link active" aria-current="page" href="/admin/views/user-manage/userlist/index.html">User List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion" id="news-accordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="news-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#news-manage"
+                aria-expanded="true" aria-controls="news-manage">
+                News Management
+            </button>
+        </h2>
+        <div id="news-manage" class="accordion-collapse collapse show" aria-labelledby="news-headingOne"
+            data-bs-parent="#news-accordion">
+            <div class="accordion-body">
+                <a id="sidemenu-addNews" class="nav-link active" aria-current="page" href="/admin/views/news-manage/add-news/index.html">Add News</a>
+                <a id="sidemenu-newsList" class="nav-link active" aria-current="page" href="/admin/views/news-manage/newslist/index.html">News List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<style>
+    .accordion-button:not(.collapsed){
+        color: black;
+        background-color: white;
+        box-shadow: none;
+    }
+    .accordion-item{
+        border: 0;
+    }
+    .accordion-button:focus{
+        box-shadow: none;
+    }
+    .nav-link{
+        color: black;
+    }
+</style>
