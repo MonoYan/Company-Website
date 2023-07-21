@@ -3,6 +3,35 @@
 
 This is an enterprise website template built using Bootstrap framework and js-server as a simulated database. The template consists of both frontend and backend components, with data analysis powered by Echarts and rich text editing capabilities provided by wangEditor.
 
+## Preview
+
+### Frontend
+<details>
+  <summary>Products</summary>
+    <img src="img/6.png" width="500">
+</details>
+<details>
+  <summary>News</summary>
+    <img src="img/5.png" width="500">
+</details>
+
+### Backend
+<details>
+  <summary>Homepage</summary>
+    <img src="img/4.png" width="500">
+</details>
+<details>
+  <summary>User Management</summary>
+    <img src="img/7.png" width="500">
+    <img src="img/1.png" width="500">
+</details>
+<details>
+  <summary>News Management</summary>
+   <img src="img/2.png" width="500">
+    <img src="img/3.png" width="500">
+</details>
+
+
 ## Project Organization
 
 ### Backend
@@ -46,6 +75,7 @@ This is an enterprise website template built using Bootstrap framework and js-se
 ## Technology Stack
 
 - Bootstrap
+- Scss
 - js-server
 - Echarts
 - wangEditor
