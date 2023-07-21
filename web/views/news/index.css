@@ -1,0 +1,138 @@
+html,
+body,
+.main {
+  height: 100%;
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .topbar {
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main .box {
+  flex: 1;
+  padding-top: 50px;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+footer .copyright {
+  color: #888;
+  font-size: 14px;
+}
+
+.news-bg {
+  background-image: url(http://localhost:3000/bg.jpeg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 99;
+  border-radius: 4px;
+}
+
+.news-bg .search-container {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.news-bg .search-container .list-group {
+  position: absolute;
+  width: 100%;
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-container {
+  padding: 8px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card-container .card {
+  width: 289.5px;
+}
+
+.card-container .card:hover {
+  box-shadow: 0 0 4px gray;
+  cursor: pointer;
+}
+
+.card-container .card .cardCover {
+  width: 100%;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px 2px 0 0;
+}
+
+.card-container .card-body h5 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.card-container .card-body p {
+  color: gray;
+  text-align: center;
+}
+
+.news-tabs {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.news-tabs hr {
+  margin: 20px 0;
+}
+
+.tab-pane .list-item {
+  padding: 10px;
+  overflow: hidden;
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.tab-pane .list-item img {
+  float: left;
+  width: 120px;
+  height: 90px;
+  margin-right: 20px;
+}
+
+.tab-pane .list-item:hover {
+  box-shadow: 0 0 4px gray;
+  cursor: pointer;
+}
+
+.tab-pane .list-item .item-title {
+  font-size: 24px;
+  vertical-align: center;
+}
+
+.tab-pane p {
+  color: gray;
+}

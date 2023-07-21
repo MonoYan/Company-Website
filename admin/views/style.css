@@ -35,3 +35,13 @@ body,
   padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+footer .copyright {
+  color: #888;
+  font-size: 14px;
+}

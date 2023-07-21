@@ -25,13 +25,12 @@ body,
   padding-top: 50px;
 }
 
-.main .box .content {
-  padding: 20px;
+footer {
+  padding: 10px;
+  text-align: center;
 }
 
-.main .box .content .maincontent {
-  margin-top: 31px;
-  border-radius: 3px;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+footer .copyright {
+  color: #888;
+  font-size: 14px;
 }

@@ -23,15 +23,25 @@ body,
         flex: 1;
         padding-top: 50px;
         // background-color: skyblue;
-            .content {
-                padding: 20px;
-                .maincontent {
-                        margin-top: 31px;
-                        border-radius: 3px;
-                        padding: 20px;
-                        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
-                    }
-            }
+            // .content {
+            //     padding: 20px;
+            //     .maincontent {
+            //             margin-top: 31px;
+            //             border-radius: 3px;
+            //             padding: 20px;
+            //             box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+            //         }
+            // }
 
     }
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer .copyright {
+    color: #888;
+    font-size: 14px;
 }
